@@ -119,7 +119,7 @@ class Solution {
         int n = matrix[0].length;
         int[] heights = new int[n];
         int ans = 0;
-        for (var row : matrix) {
+        for (char[] row : matrix) {
             for (int j = 0; j < n; ++j) {
                 if (row[j] == '1') {
                     heights[j] += 1;
